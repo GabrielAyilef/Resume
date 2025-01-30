@@ -71,7 +71,7 @@ body {
     align-items: center;
     color: white;
     page-break-inside: avoid; 
-    padding-inline: 200px;
+    padding-inline: 150px;
 }
 
 .contact span {
@@ -81,29 +81,32 @@ body {
 main {
     display: flex;
     
-    max-width: 900px;
-    gap: 40px;
-    padding: 20px;
+max-width: 900px;
+    gap: 25px;
+    padding: 25px;
     padding-top: 0;
 }
 
 main .left-column {
-    width: 75%;
+    width: 65%;
     
 }
 
 main .right-column {
     margin-left: 30px;
-    flex: 1;
+   width: 30%;
 }
-
+.position{
+    margin-bottom: 3px;
+}
 .title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #449399;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 5px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .link-portfolio {
@@ -167,30 +170,9 @@ main .right-column {
     padding: 5px 10px;
     margin: 5px;
     font-size: 0.75rem;
-    margin-bottom: 30px;
+   
 }
 
-
-@media print {
-    body {
-        width: 100%;
-        height: auto;
-    }
-
-    .header, .contact {
-        page-break-inside: avoid;
-    }
-
-    main {
-        page-break-before: avoid;
-        page-break-after: avoid;
-        page-break-inside: avoid;
-    }
-
-    .right-column, .left-column {
-        page-break-inside: avoid;
-    }
-}
 
 .contact-item{
     display: flex;
@@ -214,4 +196,7 @@ main .right-column {
 }
 .language-description{
 font-size: 0.7rem;
+}
+.education, .languages{
+    margin-bottom: 30px;
 }
