@@ -1,8 +1,5 @@
 
-@page {
-    size: A4;
-   
-}
+
 
 body {
     padding: 0;
@@ -13,6 +10,7 @@ body {
     height: auto;
     margin: 0 auto;
     box-shadow: none; 
+    
 }
 
 .header {
@@ -22,7 +20,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-inline: 40px;
-    height: 170px;
+    height: 160px;
+    
 }
 
 .header-text {
@@ -32,7 +31,10 @@ body {
     align-items: start;
     margin-block: 20px;
 }
-
+.header h1{
+    font-weight: 400;
+    font-size: 2.2rem;
+}
 .header h1, .header p, .header h3 {
     margin: 0;
 }
@@ -42,7 +44,13 @@ body {
     font-size: 1rem;
     margin-bottom: 15px;
 }
-
+.green-line{
+    background-color: #449399;
+    height: 3px;
+    width: 230px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 .header p {
     font-size: 0.8rem;
     line-height: 1.5;
@@ -74,6 +82,14 @@ body {
     padding-inline: 150px;
 }
 
+.contact-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 4px;
+    height: 100%
+}
 .contact span {
     font-size: 0.8rem;
 }
@@ -108,7 +124,9 @@ main .right-column {
     margin-top: 20px;
     margin-bottom: 8px;
 }
-
+.title .education-title{
+    margin-top: 10px;
+}
 .link-portfolio {
     text-decoration: underline;
     color: #449399;
@@ -117,7 +135,6 @@ main .right-column {
 
 .block h4 {
     margin: 0;
-    color: #222A33;
 }
 
 .date-city, .language-description {
@@ -131,8 +148,9 @@ main .right-column {
 
 .employer {
     font-weight: 400;
-    line-height: 0.8;
+    line-height: 0.9;
     padding-bottom: 5px;
+    color: rgb(0, 0, 0,0.9);
 }
 .paragraph-container{
     display: flex;
@@ -151,7 +169,7 @@ main .right-column {
 }
 .paragraph {
     font-size: 0.8rem;
-    margin-top: 8px;
+    margin-block: 8px;
 }
 
 .interests-container span {
@@ -168,28 +186,23 @@ main .right-column {
     border-radius: 4px;
     background-color: #989DA6;
     color: white;
-    padding: 5px 10px;
+    padding: 5px 5px;
     margin: 5px;
     font-size: 0.75rem;
    
 }
 
 
-.contact-item{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-.certificates a{
-    text-decoration: none;
-    color: #313c4e;
+.certificates span{
+    color: #397f84;
 }
 .certificates p{
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .languages .title{
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .languages .language{
@@ -198,6 +211,7 @@ main .right-column {
 .language-description{
 font-size: 0.7rem;
 }
-.education, .languages{
+.education, 
+.languages{
     margin-bottom: 30px;
 }
